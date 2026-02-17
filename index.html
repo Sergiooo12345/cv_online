@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        /* 1. Scroll suave para toda la web */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Botón que se adapta al color del texto (Blanco en dark, Negro en light) */
+        .btn-outline-adaptativo {
+            --bs-btn-color: var(--bs-body-color);
+            --bs-btn-border-color: var(--bs-body-color);
+            --bs-btn-hover-color: var(--bs-body-bg);
+            --bs-btn-hover-bg: var(--bs-body-color);
+            --bs-btn-active-color: var(--bs-body-bg);
+            --bs-btn-active-bg: var(--bs-body-color);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR bootstrap -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Curriculum Sergio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav w-100 mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacion">Formación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item ms-auto">
+                        <button id="cambiar_modo" class="btn btn-sm border rounded py-2 px-2">☀︎/⏾</button>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- fin navbar -->
+
+    <!-- seccion inicio -->
+    <section id="inicio" class="text-center" style="margin-top: 75px;">
+        <div class="container">
+            <h1 class="fw-bold display-4" data-aos="zoom-in">Sergio Vega</h1>
+            <p class="lead" data-aos="zoom-in">Estudiante de Desarrollador de Aplicaciones Multiplataforma</p>
+            <a href="https://dominionumberone.xo.je/" target="_blank" class="btn btn-outline-adaptativo btn-lg mt-3 px-4 rounded-pill"> Ver mis proyectos</a>
+        </div>
+    </section>
+    <!-- fin seccion inicio -->
+
+    <!-- seccion formacion -->
+    <h1 id="formacion"> </h1>
+    <section id="formacion">
+        <div class="container">
+            <h2 class="text-center mt-5" data-aos="fade-up">Formación</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+
+                    <div data-aos="fade-right" class="mb-4 p-4 border rounded">
+                        <h4>Xtart</h4>
+                        <p class="text-muted">Técnico superior de Desarrollo de Aplicaciones Multiplataforma</p>
+                        <p class="text-muted">2025 - Actual</p>
+                    </div>
+                    <div data-aos="fade-right" class="mb-4 p-4 border rounded">
+                        <h4>Xtart</h4>
+                        <p class="text-muted">Especialista en Big Dat & Inteligencia Artificial</p>
+                        <p class="text-muted">2025 - Actual</p>
+                    </div>
+                    <div data-aos="fade-right" class="mb-4 p-4 border rounded">
+                        <h4>Bachillerato</h4>
+                        <p class="text-muted">Colegio Estudiantes</p>
+                        <p class="text-muted">2023 - 2025</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin seccion formacion -->
+
+    <!-- seccion experiencia -->
+    <h1 id="experiencia"> </h1>
+    <section id="experiencia">
+        <div class="container">
+            <h2 class="text-center mt-5 mb-4" data-aos="fade-up">Experiencia</h2>
+
+            <div class="table-responsive" data-aos="fade-up">
+                <table class="table table-bordered table-striped text-center align-middle">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Trabajo</th>
+                            <th scope="col">Tiempo</th>
+                            <th scope="col">Empresa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Formación en Centro de Trabajo (FCT)</td>
+                            <td>Desarrollador</td>
+                            <td>2026 marzo - junio</td>
+                            <td>HPE</td>
+                        </tr>
+                        <tr>
+                            <td>Formación en Centro de Trabajo (FCT)</td>
+                            <td>Desarrollador</td>
+                            <td>2027 marzo - junio</td>
+                            <td>HPE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- fin seccion experiencia -->
+
+    <!-- seccion contacto -->
+    <h1 id="contacto"> </h1>
+    <section id="contacto" class="mb-5">
+        <div class="container">
+            <h2 class="text-center mt-5 mb-4" data-aos="fade-up">Contacto</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6">
+
+                    <form id="formulario-contacto" class="p-4 border rounded shadow-sm" data-aos="fade-up"
+                        data-aos-delay="100">
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com"
+                                required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="asunto" class="form-label">Asunto</label>
+                            <input type="text" class="form-control" id="asunto" placeholder="Motivo de contacto">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="mensaje" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="mensaje" rows="4"
+                                placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-outline-adaptativo btn-lg">Enviar Mensaje</button>
+                        </div>
+
+                        <div id="mensaje-exito" class="alert alert-success mt-3 d-none text-center" role="alert">
+                            ¡Mensaje enviado correctamente! (Simulación)
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fin seccion contacto -->
+
+    <!-- footer -->
+    <footer class="text-center py-2">
+        <p class="mb-0"> &copy; 2026 Sergio Vega - Curriculum</p>
+    </footer>
+    <!-- fin footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        // Source - https://stackoverflow.com/a/63087710
+        // Posted by Carol Skelly, modified by community. See post 'Timeline' for change history
+        // Retrieved 2026-02-17, License - CC BY-SA 4.0
+
+        document.getElementById('cambiar_modo').addEventListener('click', () => {
+            if (document.documentElement.getAttribute('data-bs-theme') == 'dark') {
+                document.documentElement.setAttribute('data-bs-theme', 'light')
+            }
+            else {
+                document.documentElement.setAttribute('data-bs-theme', 'dark')
+            }
+        })
+
+    </script>
+
+    <script>
+        // Lógica del formulario de contacto ficticio
+        document.getElementById('formulario-contacto').addEventListener('submit', function (event) {
+            // 1. Evitamos que el formulario se envíe de verdad y recargue la página
+            event.preventDefault();
+
+            // 2. Seleccionamos la alerta de éxito
+            const alerta = document.getElementById('mensaje-exito');
+
+            // 3. Le quitamos la clase 'd-none' para que aparezca
+            alerta.classList.remove('d-none');
+
+            // 4. Opcional: Limpiamos los campos del formulario para que parezca que se envió
+            this.reset();
+
+            // 5. Opcional: Hacemos que el mensaje desaparezca a los 3 segundos
+            setTimeout(() => {
+                alerta.classList.add('d-none');
+            }, 5000);
+        });
+    </script>
+</body>
+
+</html>
